@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4767d48139.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            /* border: 1px solid #000; */
+
+        }
+
+    .main1{
+        height: 650px;
+        width: 100%;
+        background-image: linear-gradient(rgba(67, 42, 206, 0.637), rgba(137, 114, 218, 0.178) ),url(./hero.jpg);
+        background-size: 100% 100%;
+    }
+    .main1>img{ 
+        height: 75px;
+        position: absolute;
+        top: 20px;
+        left: 90px;
+        transition-duration: 1s;
+    }
+    .main1>img:hover{
+        transform: rotateY(360deg);
+    }
+    .navbar{
+         height: 100px;
+         width: 100%;
+         /* border: 1px solid #000; */
+    }
+    .navbar>ul{
+        text-align:center;
+        list-style: none;
+    }
+    .navbar>ul>li{
+        font-size: 18px;
+        color: white;
+        float: left;
+        font-family: sans-serif;
+        position: relative;
+        cursor:pointer;
+        left: 610px;
+        top: 55px;
+        margin-left: 55px;
+        transition-duration: 2s;
+    }
+    .navbar>ul>li:hover{
+        color: brown;
+        transition: 2s;
+        transform: rotateY(360deg) scale(1.2);
+    }
+    .box1{
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid #000; */
+        position: relative;
+    }
+    .box2{
+        height: 400px;
+        width: 650px;
+        /* border: 1px solid #000; */
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        transition-duration:  2s;
+    }
+    .box2:hover{
+        transition-duration: 2s;
+        transform: scale(1.2);
+
+    }
+
+    .box2>h1{
+        font-size: 45px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        color: white;
+        top: 45px;
+        left: 145px;
+        transition-duration: 2s;
+    }
+    .box2:hover>h1{
+        transition-duration: 2s;
+        transform: rotateY(360deg) ;
+        color: brown;
+    }
+    .box2>p{
+        font-size: 22px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top:210px;
+        left:145px;
+        transition-duration: 2s;
+    }
+    .box2>p:hover{
+        transform: translate(40px);
+        color: darkgray;
+
+    }
+    .box2>button{
+        height: 40px;
+        width: 130px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: white;
+        background: transparent;
+        box-shadow: 0px 2px 10px 5px white; 
+        position: relative;
+        top: 280px;
+        left: 145px;
+        transition-duration: 2s;
+    }
+    .box2:hover>button{
+        transition-duration: 2s;
+        background-color: #000;
+    }
+    .pic1{
+        height: 430px;
+        width: 300px;
+        /* float: left; */
+        position: absolute;
+        left: 790px;
+        top: 40px;
+    }
+    .pic1>img{
+        height: 100%;
+        width: 100%;
+        transition-duration: 1s;
+    }
+    .pic1>img:hover{
+        transition-duration: 1s;
+        transform: translate(150px);
+    }
+    .main2{
+        height: 450px;
+        width: 100%;
+        /* border: 1px solid #000; */
+        background-color: rgb(163, 163, 163);
+        position: relative;
+    }
+    .box3{
+        height: 370px;
+        width: 400px;
+        /* border: 1px solid #000; */
+        position: relative;
+        float: left;
+        top: 30px;
+        left: 50px;
+        transition-duration: 3s;
+    }
+    .box3:hover{
+        transition-duration: 3s;
+        transform: rotateY(360deg) scale(0.5);
+    }
+    .box3>h2{
+        font-size: 35px;
+        position: absolute;
+        top: 50px;
+        left: 150px;
+    }
+    .box3>h1{
+        font-size: 50px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+    .box3>p{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        top: 200px;
+    }
+    .box4{
+        height: 320px;
+        width: 300px;
+        background-color: white;
+        /* border: 1px solid #000; */
+        float: left;
+        position: relative;
+        top:  80px;
+        left: 220px;
+        margin-left: 40px;
+        box-shadow: 5px 5px 30px 8px black;
+        transition-duration: 2s;
+    }
+    .box4:hover{
+        transition-duration: 2s;
+        transform: scale(1.2);
+    }
+    .icon{
+        height: 50px;
+        width: 50px;
+        font-size: 60px;
+        position: absolute;
+        top: 20px;
+        left: 120px;
+    }
+    .box4>h1{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;  
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 90px;
+        /* left: 50px; */
+    }
+    .box4>p{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-weight: 500;
+        position: absolute;
+        top: 150px;
+        /* left: 40px; */
+    }
+    .box4>h3{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 250px;
+        /* left: 90px; */
+    }
+    .main3{
+        height: 750px;
+        width: 100%;
+        border: 1px solid red;
+        position: relative;
+    }
+    .main3>h2{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 40px;
+        transition-duration: 2s;
+    }
+    .main3>h2:hover{
+        transition-duration: 2s;
+        transform: skewX(20deg);
+        color:darkcyan ;
+    }
+    .main3>h1{
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 100px;
+        transition-duration: 2s;
+    }
+    .main3>h1:hover{
+        transition-duration: 2s;
+        transform: scale(1.2);
+        color:darkcyan ;
+    }
+    .main3>p{
+        width: 100%;
+        /* font-size: 20px; */
+        letter-spacing: 2px;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 160px;
+        transition-duration: 2s;
+    }
+    .main3>p:hover{
+        transition-duration: 2s;
+        transform: translate(40px);
+        color: darkcyan;
+    }
+    .box5{
+        height: 300px;
+        width: 450px;
+        background-image: url(./business-1.jpg);
+        background-size: 100% 100%;
+        border-radius: 30px;
+        position: absolute;
+        border: none;
+        top: 350px;
+        left: 100px;
+        transition-duration: 2s;
+    }
+    .box5:hover{
+        transition-duration: 2s;
+        transform: scale(1.1);
+    }
+    .box6{
+        height: 220px;
+        width: 250px;
+        background-color:#000;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px skyblue;
+        position: absolute;
+        top: 250px;
+        left: 700px;
+        transition-duration: 0.8s;
+    }
+    .box6:hover{
+        transition-duration: 1s;
+        /* transition-timing-function: ease-out; */
+        transform: scale(1.2);
+    }
+    .box6>h1{
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .box6>h2{
+        font-size: 25px;
+        color: white;
+        font-family:cursive;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    .box6>p{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    }
+    .box7{
+        height: 220px;
+        width: 250px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px skyblue;
+        position: absolute;
+        top: 250px;
+        left: 1000px;
+        transition-duration: 2s;
+    }
+    .box7:hover{
+        transition-duration: 2s;
+        /* transition-timing-function: ease-out; */
+        transform: skew(10deg);
+    }
+    .box7>h1{
+        color:#000;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .box7>h2{
+        font-size: 25px;
+        color:#000;
+        position: absolute;
+        font-family: cursive;
+        top: 60px;
+        left: 10px;
+    }
+    .box7>p{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color:#000;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    }
+    .box8{
+        height: 220px;
+        width: 250px;
+        background-color:white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px skyblue;
+        position: absolute;
+        top: 500px;
+        left: 700px;
+        transition-duration: 2s;
+    }
+    .box8:hover{
+        transition-duration: 2s;
+        /* transition-timing-function: ease-out; */
+        transform: rotateY(-360deg) translate(-50px);
+    }
+    .box8>h1{
+        color:#000;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .box8>h2{
+        font-size: 25px;
+        color: black;
+        font-family: cursive;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    .box8>p{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    }
+    .box9{
+        height: 220px;
+        width: 250px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px skyblue;
+        position: absolute;
+        top: 500px;
+        left: 1000px;
+        transition-duration: 0.8s;
+    }
+    .box9:hover{
+        transition-duration: 0.8s;
+        /* transition-timing-function: ease-out; */
+        transform: rotateX(360deg);
+    }
+    .box9>h1{
+        color: black;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .box9>h2{
+        font-size: 25px;
+        color: black;
+        font-family: cursive;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    .box9>p{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    }
+    .main4{
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(rgba(67, 42, 206, 0.637), rgba(137, 114, 218, 0.178) ),url(./business-bg-1.jpg);
+        background-size: 100% 100%;
+    }
+    .box10{
+        height: 200px;
+        width: 200px;
+        background: transparent;
+        float:left;
+        position: relative;
+        top: 50px;
+        margin-left: 100px;
+        /* transition-property: all; */
+        transition-duration: 5s;
+        color: white;
+        
+
+    }
+    .box10:hover{
+        transition-duration: 3s;
+        background-color: white;
+        /* transform: scale(1.0); */
+        border-radius: 100px;
+        color: black;
+        
+
+    }
+    .icon1{
+        height: 60px;
+        width: 60px;
+        font-size: 60px;
+        /* color: white; */
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+    .box10>h1{
+        /* color: white; */
+        position: absolute;
+        top: 100px;
+        left: 60px;
+    }
+    .box10>h3{
+        /* color: white; */
+        position: absolute;
+        top: 150px;
+        left: 50px;
+    }
+    .main5{
+        height: 900px;
+        width: 100%;
+        baCkground-color: rgb(184, 183, 183);
+        position: relative;
+    }
+    .main5>h2{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 20px;
+        transition-duration: 2s;
+    }
+    .main5>h2:hover{
+        transition-duration: 2s;
+        transform: skewx(10deg);
+        color: darkcyan;
+    }
+    .main5>h1{
+        width: 100%;
+        font-size: 45px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 70px;
+        transition-duration: 2s;
+    }
+    .main5>h1:hover{
+        transition-duration: 2s;
+        transform: scale(1.3);
+        color: darkcyan;
+    }
+    .main5>p{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        font-family:cursive;
+        position: absolute;
+        top: 130px;
+        transition-duration: 2s;
+    }
+    .main5>p:hover{
+        transition-duration: 2s;
+        transform: translate(30px);
+        color: darkcyan;
+    }
+    .card1{
+        height: 470px;
+        width: 280px;
+        box-shadow: 0px 0px 30px 0px darkcyan;
+        background-color: white;
+        float: left;
+        position: absolute;
+        top: 350px;
+        left: 200px;
+        transition: 2s;
+    }
+    .card1:hover{
+        transition-duration: 2s;
+        transform: scale(0.8);
+        background-color: #000;
+        color: darkcyan;
+
+    }
+    .card1>h1{
+        font-size: 35px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        }
+        .card1>h2{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+        .card1>p{
+        font-size: 25px;
+        position: absolute;
+        top: 90px;
+        left: 10px;
+        }
+        .card1>hr{
+            /* height: 1.5px; */
+            width: 220px;
+            background-color: black;
+            border: 1px solid #000;
+            position: absolute;
+            top: 135px;
+            left: 10px;
+        }
+        .card1:hover>.hr{
+            border: 2px solid white;
+        }
+        .card1>ul{
+            list-style: none;
+        font-size: 20px;
+        font-family:cursive;
+        position: absolute;
+        top: 130px;
+        left: 10px;
+        }
+        .card1>ul>li{
+            margin-top: 10%;
+        }
+        .card1>button{
+            height: 45px;
+            width: 150px;
+            background-color: #000;
+            color: white;
+            border-radius: 30px;
+            position: absolute;
+            top: 405px;
+            left: 60px;
+            transition-duration: 2s;
+        }
+        .card1:hover>button{
+            border: 1px solid white;
+            color: darkcyan;
+        }
+        .card2{
+        height: 570px;
+        width: 280px;
+        background-color: white;
+        box-shadow: 0px 0px 30px 0px darkcyan;
+        float: left;
+        position: absolute;
+        top: 300px;
+        left: 540px;
+        transition: 2s;
+    }
+    .card2:hover{
+        transition-duration: 2s;
+        transform: scale(1.1);
+        background-color: #000;
+        color: darkcyan;
+
+    }
+    .card2>h1{
+        font-size: 35px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        }
+        .card2>h2{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+        }
+        .card2>p{
+        font-size: 25px;
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        }
+        .card2>hr{
+            /* height: 1.5px; */
+            width: 220px;
+            background-color: black;
+            border: 1px solid #000;
+            position: absolute;
+            top: 165px;
+            left: 20px;
+        }
+        .card2:hover>.hr{
+            border: 2px solid white;
+        }
+        .card2>ul{
+            list-style: none;
+        font-size: 20px;
+        font-family:cursive;
+        position: absolute;
+        top: 170px;
+        left: 20px;
+        }
+        .card2>ul>li{
+            margin-top: 10%;
+        }
+        .card2>button{
+            height: 45px;
+            width: 150px;
+            background-color: #000;
+            color: white;
+            border-radius: 30px;
+            position: absolute;
+            top: 455px;
+            left: 60px;
+            transition-duration: 2s;
+        }
+        .card2:hover>button{
+            border: 1px solid white;
+            color: darkcyan;
+        }
+        .card3{
+        height: 470px;
+        width: 280px;
+        background-color: white;
+        float: left;
+        position: absolute;
+        box-shadow: 0px 0px 30px 0px darkcyan;
+        top: 350px;
+        left: 880px;
+        transition: 2s;
+    }
+    .card3:hover{
+        transition-duration: 2s;
+        transform: scale(0.8);
+        background-color: #000;
+        color: darkcyan;
+
+    }
+    .card3>h1{
+        font-size: 35px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        }
+        .card3>h2{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+        .card3>p{
+        font-size: 25px;
+        position: absolute;
+        top: 90px;
+        left: 10px;
+        }
+        .card3>hr{
+            /* height: 1.5px; */
+            width: 220px;
+            background-color: black;
+            border: 1px solid #000;
+            position: absolute;
+            top: 135px;
+            left: 10px;
+        }
+        .card3:hover>.hr{
+            border: 2px solid white;
+        }
+        .card3>ul{
+            list-style: none;
+        font-size: 20px;
+        font-family:cursive;
+        position: absolute;
+        top: 130px;
+        left: 10px;
+        }
+        .card3>ul>li{
+            margin-top: 10%;
+        }
+        .card3>button{
+            height: 45px;
+            width: 150px;
+            background-color: #000;
+            color: white;
+            border-radius: 30px;
+            position: absolute;
+            top: 405px;
+            left: 60px;
+            transition-duration: 2s;
+        }
+        .card3:hover>button{
+            border: 1px solid white;
+            color: darkcyan;
+        }
+        .main6{
+            height: 550px;
+            width: 100%;
+            position: relative;
+        }
+        .main6>h1{
+            font-size: 50px;
+            position: absolute;
+            top: 150px;
+            left: 70px;
+            transition-duration: 2s
+        }
+        .main6>h1:hover{
+            transition-duration: 2s;
+            transform: scale(1.2) translate(-25px);
+            color: darkcyan;
+        }
+        .main6>p{
+            font-size: 20px;
+            position: absolute;
+            top: 220px;
+            left: 70px;
+            transition-duration: 2s
+        }
+        .main6>p:hover{
+            transition-duration: 2s;
+            transform:translate(50px);
+            color: darkcyan;
+        }
+        .box11{
+            height: 400px;
+            width: 410px;
+            background-color:rgb(185, 163, 163) ;
+            position: absolute;
+            top: 100px;
+            left: 800px;
+            transition: 2s;
+            transform: rotate(-19deg);
+        }
+        .box11:hover{
+            transform:rotate(0deg);
+            transition-duration: 2s;
+            color: darkcyan;
+        }
+        .box11>p{
+            font-size: 19px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: absolute;
+            top: 20px;
+            left: 5px;
+        }
+        .pic3{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            background-image: url(./avatar-1.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: 270px;
+            left: 20px;
+        }
+        .main7{
+            height: 600px;
+            width: 100%;
+            position: relative;
+        }
+        .main7>h1{
+            font-size: 55px;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+        .main7>h1:hover{
+            transition-duration: 2s;
+            transform: translate(-50px);
+            color: darkcyan;
+        }
+        .main7>p{
+            width: 50%;
+            font-size: 20px;
+            position: relative;
+            top: 90px;
+            left: 50px;
+            transition-duration: 2s;
+        }
+        .main7>p:hover{
+            transition-duration: 2s;
+            transform: translate(50px);
+            color: darkcyan;
+        }
+        .main7>img{
+            height: 350px;
+            width: 470px;
+            border-radius: 30px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 140px;
+            left: 840px;
+        }
+        .main7>img:hover{
+            transition-duration: 2s;
+            transform: scale(1.2);
+        }
+        .input1{
+            height: 30px;
+            width: 300px;
+            border-radius: 30px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 230px;
+            left: 50px;
+            padding-left: 10px;
+        }
+        .input2{
+            height: 30px;
+            width: 300px;
+            border-radius: 30px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 230px;
+            left: 420px;
+            padding-left: 10px;
+        }
+        .input3{
+            height: 35px;
+            width: 680px;
+            border-radius: 30px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 290px;
+            left: 50px;
+            padding-left: 10px;
+        }
+        .input4{
+            height: 150px;
+            width: 680px;
+            border-radius: 30px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 350px;
+            left: 50px;
+            padding-left: 10px;
+        }
+        .main7>button{
+            height: 45px;
+            width: 150px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            background-color: #000;
+            font-family:sans-serif ;
+            border: none;
+            box-shadow: 0px 0px 20px 10px gray;
+            position: absolute;
+            top: 540px;
+            left: 50px;
+            /* padding-left: 10px; */
+        }
+        .main7>button:hover{
+            background-color: darkcyan;
+        }
+        .main8{
+            height: 700px;
+            width: 100%;
+            background-color:rgb(3, 3, 29);
+            position: relative;
+        }
+        .main8>img{
+            height: 140px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transition-duration: 2s;
+        }
+        .main8>img:hover{
+            transition-duration: 2s;
+            transform: rotateY(360deg);
+        }
+        .para{
+            height: 350px;
+            width: 500px;
+            font-family:cursive;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+            color: white;
+            transition-duration: 2s;
+        }
+        .para:hover{
+            transition-duration: 2s;
+            transform: skew(5deg);
+        }
+        .card4{
+            height: 250px;
+            width: 200px;
+            float: left;
+            position: relative;
+            top: 300px;
+            left: 700px;
+        }
+        .card4>h1{
+            font-size: 25px;
+            color: white;
+            /* font-size: ; */
+        }
+        .card4>ul{
+            color: white;
+            list-style: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .card4>ul>li{
+
+            margin-top: 10px;
+        }
+        .card4>ul>li:hover{
+            text-decoration: underline;
+        }
+        .main8>h2{
+            width: 100%;
+            font-size: 25px;
+            color:gold ;
+            position: absolute;
+            top: 90%;
+            text-align: center;
+            transition-duration: 2s;
+            font-family:cursive;
+        }
+        .main8>h2:hover{
+            transition-duration: 2s;
+            transform: translate(50px);
+        }
+
+
+
+    </style>
+<body>
+</head>
+    <div class="main1">
+        <img src="logo.png">
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Page</li>
+            <li>Project</li>
+            <li>Blog</li>
+            <li>Elements</li>
+        </ul>
+    </div>
+    <div class="box1">
+        <div class="box2">
+        <h1>DIGITAL <br> FIRST</h1>
+        <p>Lorem ipsum dolor datagrid, adipisicing.<br> saepe anim illum,  reiciendis recusand</p>
+        <button>START HERE</button>
+        </div>
+        <div class="pic1">
+            <img src="./screen-2.png">
+        </div>
+    </div>
+    </div>
+    <div class="main2">
+        <div class="box3">
+        <h2>Service</h2>
+        <h1>Why US ?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Optio corrupti, deleniti<br> repellendus, illo, qui magni ratione obcaecati<br> reprehenderit hic repellat atque deserunt<br> quam? Ea nostrum nisi officiis eligendi<br> dolores non!</p>
+       </div>
+        <div class="box4">
+              <i class="fa-regular fa-circle-play icon"></i> 
+              <h1>VIDEO PRODUCTION</h1>    
+              <p>Lorem ipsum dolor sit amet<br> consectetur, adipisicing elit.<br>Quiz doloremque ipsum<br>laboriosam </p>
+              <h3>VIEW DETAILS</h3>
+        </div>
+        <div class="box4">
+            <i class="fa-solid fa-envelope-open-text icon"></i> 
+            <h1>VIDEO PRODUCTION</h1>    
+            <p>Lorem ipsum dolor sit amet<br> consectetur, adipisicing elit. <br> Quiz doloremque ipsum <br> laboriosam </p>
+            <h3>VIEW DETAILS</h3>   
+        </div>
+        </div>
+        <div class="main3">
+            <h2>OUR PROCESS</h2>
+            <h1>OUR FOUR STEP PROGRAM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nisi deserunt, enim quas,<br>
+                nam necessitatibus dolores quae paria Porro accusantium ex temporibus rem.</p>
+            <div class="box5"></div>
+            <div class="box6">
+                <h1>.01</h1>
+                <h2>Reasearch</h2>
+                <p>Lorem ipsum dolor, amet <br> consectetur adipisicing   deserunt</p>
+            </div>
+            <div class="box7">
+                <h1>.02</h1>
+                <h2>Results</h2>
+                <p>Lorem ipsum dolor, amet <br> consectetur adipisicing   deserunt</p>
+            </div>
+            <div class="box8">
+                <h1>.03</h1>
+                <h2>Management</h2>
+                <p>Lorem ipsum dolor, amet <br> consectetur adipisicing   deserunt</p>
+            </div>
+            <div class="box9">
+                <h1>.04</h1>
+                <h2>logistics</h2>
+                <p>Lorem ipsum dolor, amet <br> consectetur adipisicing   deserunt</p>
+            </div>
+        </div>
+    <div class="main4">
+        <div class="box10">
+        <i class="fa-solid fa-chart-line icon1"></i>
+        <h1>5048</h1>
+        <h3>current Users</h3>
+        </div>
+        <div class="box10">
+            <i class="fa-solid fa-chart-line icon1"></i>
+            <h1>124</h1>
+            <h3>current Users</h3>
+            </div>
+            <div class="box10">
+                <i class="fa-solid fa-chart-line icon1"></i>
+                <h1>13414</h1>
+                <h3>current Users</h3>
+            </div>
+            <div class="box10">
+                <i class="fa-solid fa-chart-line icon1"></i>
+                <h1>10987</h1>
+                <h3>current Users</h3>
+            </div>         
+    </div>
+    <div class="main5">
+        <h2>OUR PACKAGE</h2>
+        <h1>SELECT YOUR PACKAGE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quidem optio deleniti aspernatur culpa,deserunt dignissimos, ipsum ducimus<br> dolorem eaque. Commodi,tempore doloribus veritatis molestiae provident.</p>
+        <div class="card1">
+            <h1>Starter Kit</h1>
+            <h2>$19</h2>
+                <p>Pay as You Go</p>
+              <hr class="hr">
+            <ul>
+                <li>5GB Bandwith</li>
+                <li>High Speed</li>
+                <li>1GB Storage</li>
+                <li>Unlimited Users</li>
+                <li>Monthly Report Analysis</li>
+            </ul>  
+            <button>CHOICE START KIT</button>  
+        </div>
+        <div class="card2">
+            <h1>All Inclusives</h1>
+            <h2>$19</h2>
+                <p>Pay as You Go</p>
+              <hr class="hr">
+            <ul>
+                <li>5GB Bandwith</li>
+                <li>High Speed</li>
+                <li>1GB Storage</li>
+                <li>Unlimited Users</li>
+                <li>Monthly Report Analysis</li>
+            </ul>  
+            <button>CHOICE START KIT</button>  
+        </div>
+        <div class="card3">
+            <h1>Starter Kit</h1>
+            <h2>$19</h2>
+                <p>Pay as You Go</p>
+              <hr class="hr">
+            <ul>
+                <li>5GB Bandwith</li>
+                <li>High Speed</li>
+                <li>1GB Storage</li>
+                <li>Unlimited Users</li>
+                <li>Monthly Report Analysis</li>
+            </ul>  
+            <button>CHOICE START KIT</button>  
+        </div>
+    </div>
+    <div class="main6">
+        <h1>Client Feedback</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium<br>
+            quibusdam, perferendis ex quisquam incidunt? Pariatur, vero architecto!</p>
+            <div class="box11">
+                <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quos, culpa mollit ia vero deserunt<br>
+                    libero error ratione odio cupiditate omnis corrupti
+                    nulla, sapien maiores even iet! Aperiam quaerat
+                    numquam odit voluptatem! Lorem ipsum dolor sit<br>
+                    amet consectetur adipisicing elit. Quos, culpa<br>
+                    mollit ia vero deserunt libero error ratione odio
+                    cupiditate omnis corrupti nulla, sapien maiores<br>
+                    even iet! Aperiam quaerat numquam odit<br>
+                    voluptatem!</p>
+                    <div class="pic3"></div>
+            </div>
+    </div>
+    <div class="main7">
+        <h1>Get In Touch</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur<br>
+            errorullam dicta id laborum vitae maiores, anostrum, ipsam perferendis<br>
+            unde? Distinctio eum reprehenderit repudiandae aspernatur ducimus<br>
+            provident quo aliquam!</p>
+            <img src="./half-block2.jpg">
+            <input type="text" class="input1" placeholder="Name">
+            <input type="text" class="input2" placeholder="Email">
+            <input type="text" class="input3" placeholder="Subject">
+            <input type="text" class="input4" placeholder="Message">
+            <button>Send Message</button>
+    </div>
+    <div class="main8">
+        <img src="./logo.png">
+       <div class="para"> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            ea error odio ipsam ratione doloribus quia, provident ullam dolor
+            molestias repellendus quo cum sequi quod totam vel illum esse?
+            Illum, laborum? Nesciunt excepturi temporibus maxime iste itaque
+            exercitationem vero eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Omnis corporis ipsa id? Sit ad distinctio dicta dolor
+            commodi alias, ab harum excepturi recusandae, sequi, a unde
+            accusantium deleniti! Fugit, libero. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Esse at consectetur sequi asperiores
+            eum, quo libero! Vero aspernatur minima, voluptatum quas
+            nesciunt ex earum dolore nobis iusto rerum quis exercitationem.</p>
+        </div>
+        <div class="card4">
+            <h1>ABOUT US</h1>
+            <ul>
+                <li>Our Services</li>
+                <li>Our Services</li>
+                <li>The Team</li>
+                <li>Client Urge</li>
+                <li>Article</li>
+            </ul>
+        </div>
+        <div class="card4">
+            <h1>QUICK LINKS</h1>
+            <ul>
+               <li> How It Works?</li>
+                <li>Support</li>
+                <li>Privacy Policy</li>
+                <li>Report Bug</li>
+                <li>License</li>
+            </ul>
+        </div>
+        <div class="card4">
+            <h1>OUR LOCATION</h1>
+            <ul>
+                <li>Support@mail.com</li>
+                <li>0662243965</li>
+                <li>145 Brooklyn Avenue</li>
+                <li>Client Urge</li>
+            </ul>
+            
+        </div>
+        <h2>Developed by @ Muhammad Bilal Yousaf</h2>
+        </div>
+</body>
+</html>
